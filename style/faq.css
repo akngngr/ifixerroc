@@ -1,0 +1,177 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+#pageWrap {
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+#container {
+  background-color: white;
+  height: auto;
+  width: 100%;
+  border-top: 20px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+header {
+  background-color: rgba(255, 182, 0, 0.8);
+  color: white;
+  font-size: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'rockwell';
+  padding: 25px;
+  text-shadow: 5px 5px 5px black;
+  height: 120px;
+  box-shadow: 0px 7px 10px black;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+header h1 {
+  display: flex;
+  font-size: 30px;
+  justify-content: flex-end;
+  text-align: left;
+}
+#title {
+  text-align: center;
+  margin: 20px auto;
+  background-color: rgba(255, 182, 0, 0.8);
+  padding: 15px;
+  box-shadow: 0px 7px 10px black;
+  width: 80%;
+  align-items: center;
+}
+header img {
+  display: flex;
+  padding: 10px;
+}
+
+header img:hover {
+  width: 105px;
+  height: 105px;
+  transition: all 0.5s;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+nav ul {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 20px auto 0 auto;
+  width: 80%;
+  height: 50px;
+  text-align: center;
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Courier new';
+  min-width: 20%;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease-out 0.3s;
+  justify-content: space-around;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 182, 0, 1);
+  border-bottom: 5px double white;
+  border-top: 5px double white;
+  font-size: 25px;
+  box-shadow: -10px 0 20px -10px orange, 10px 0 20px -10px orange;
+  padding: 0 10px;
+  transition: all 0.5s;
+}
+#faq {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: bold;
+  background-image: url(../media/2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5%;
+  margin-top: 5%;
+  width: 100%;
+  height: auto;
+}
+#faq p {
+  color: grey;
+  font-family: 'Courier New';
+  font-size: 24px;
+  width: 60%;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2%;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: box-shadow 0.5s ease-out 0.5s;
+}
+#faq a {
+  text-decoration: none;
+}
+#faq a:hover p {
+  box-shadow: -5px 0 30px -5px white, 5px 0 30px -5px white;
+}
+#a1 p,
+#a2 p,
+#a3 p,
+#a4 p,
+#a5 p {
+  background-color: rgba(255, 182, 0, 0.9);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  height: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
+  color: rgba(0, 0, 0, 1);
+}
+#a4 p a {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+footer {
+  margin: 10% auto 0 auto;
+  text-align: center;
+  font-size: 20px;
+  bottom: 0;
+  background-color: rgba(255, 182, 0, 0.8);
+  width: 100%;
+  box-shadow: 0px 7px 10px black;
+  position: absolute;
+}

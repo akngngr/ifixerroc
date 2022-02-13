@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="iFixerROC Smartphone Repair Service" />
+	<link rel="stylesheet" href="../style/appointment.css" />
+	<title>Appointments - iFixerROC Smartphone Repair Service</title>
+
+	<script>
+		function availableDate() {
+			var today = new Date().toISOString().split('T')[0]
+			document
+				.getElementsByName('availableDate1')[0]
+				.setAttribute('min', today)
+		}
+		function calculate() {
+			var fname = document.getElementById('firstname').value
+			var lname = document.getElementById('lastname').value
+			var myEmail = document.getElementById('email').value
+
+			if (fname == '' || lname == '' || myEmail == '') {
+				alert('Please enter required information')
+				fname.focus()
+				lname.focus()
+				myEmail.focus()
+			} else {
+				alert(
+					'Thank you for your submission. iFixerROC team will contact to you via email in 24 hours!',
+				)
+			}
+			return Clear()
+		}
+		function Clear() {
+			document.getElementById('firstname').focus()
+			document.getElementById('firstname').value = ''
+			document.getElementById('lastname').value = ''
+			document.getElementById('email').value = ''
+			document.getElementById('tel').value = ''
+			document.getElementById('brand').value = ''
+			document.getElementById('model').value = ''
+			document.getElementById('available').value = ''
+			document.getElementById('availableDate2').value = ''
+			document.getElementById('screen').checked = false
+			document.getElementById('port').checked = false
+			document.getElementById('camera').checked = false
+			document.getElementById('housing').checked = false
+			document.getElementById('speaker').checked = false
+			document.getElementById('button').checked = false
+			document.getElementById('pin').checked = false
+			document.getElementById('gmail').checked = false
+			document.getElementById('blacklisted').checked = false
+			document.getElementById('textArea').value = ''
+			document.getElementById('yes').checked = false
+		}
+	</script>
+</head>
+<!--close head-->
+
+<body>
+	<div id="pageWrap">
+		<header>
+			<a href="../index.html">
+				<img src="../media/logo1.png" alt="iFixerROC" width="100" height="100" />
+			</a>
+			<h1>iFixerROC Smartphone Repair Services</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="repair.html">Repairs</a></li>
+				<li><a href="appointment.html">Appointments</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="about.html">About Us</a></li>
+			</ul>
+		</nav>
+		<h2>Make Your Appointment Today</h2>
+		<div id="container">
+			<form action="http://www.formbuddy.com/cgi-bin/form.pl" method="post">
+				<input type="hidden" name="username" value="agungor" />
+				<input type="hidden" name="reqd" value="1,2,3,4" />
+				<input type="hidden" name="url"
+					value="http://studentweb.monroecc.edu/students/agungor/SP_CIS201185/exercises/thankyou.html" />
+				<fieldset id="customer">
+					<legend>Customer Information</legend>
+					<label for="firstname">First Name:</label>
+					<input type="text" name="firstname" id="firstname" required />
+					<br />
+					<label for="lastname">Last Name:</label>
+					<input type="text" name="lastname" id="lastname" required />
+					<br />
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" required />
+					<br />
+					<label for="tel">Phone Number:</label>
+					<input type="tel" name="tel" id="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" />
+				</fieldset>
+				<br />
+				<fieldset id="fs3">
+					<legend>Appointment Date</legend>
+
+					<span id="available">
+						<label for="availableDate1">From</label>
+						<input type="date" name="availableDate1" id="availableDate1" onclick="availableDate();" />
+						<br />
+						<label for="availableDate2">To</label>
+						<input type="date" name="availableDate2" id="availableDate2" />
+					</span>
+				</fieldset>
+				<br />
+
+				<fieldset id="details">
+					<legend>Device Details</legend>
+					<label for="brand">Brand:</label>
+					<select name="brand" id="brand" size="1" required>
+						<option value="iphone">iPhone</option>
+						<option value="samsung">Samsung</option>
+						<option value="lg">LG</option>
+					</select>
+					<br />
+
+					<label for="model">Model:</label>
+					<select name="model" id="model" size="1" required>
+						<option value="5">5</option>
+						<option value="5C">5C</option>
+						<option value="5S">5S</option>
+						<option value="SE">SE</option>
+						<option value="6">6</option>
+						<option value="6S">6S</option>
+						<option value="6P">6 Plus</option>
+						<option value="6SP">6S Plus</option>
+						<option value="7">7</option>
+						<option value="7P">7 Plus</option>
+						<option value="s3">S3</option>
+						<option value="s4">S4</option>
+						<option value="s5">S5</option>
+						<option value="s6">S6</option>
+						<option value="s7">S7</option>
+						<option value="note3">NOTE 3</option>
+						<option value="note4">NOTE 4</option>
+						<option value="note5">NOTE 5</option>
+						<option value="stylo2">Stylo 2</option>
+						<option value="v10">V-10</option>
+						<option value="v20">V-20</option>
+						<option value="g3">G3</option>
+						<option value="g4">G4</option>
+						<option value="g5">G5</option>
+						<option value="g6">G6</option>
+					</select>
+				</fieldset>
+				<br />
+
+				<fieldset id="fs4">
+					<legend>Repair Type</legend>
+					<span id="damaged"><label>What part(s) are damaged?</label></span>
+					<br />
+					<br />
+					<label for="screen">Screen</label>
+					<input type="checkbox" name="screen" id="screen" />
+					<br />
+					<label for="screen">Charger Port</label>
+					<input type="checkbox" name="port" id="port" />
+					<br />
+					<label for="camera">Camera</label>
+					<input type="checkbox" name="camera" id="camera" />
+					<br />
+					<label for="housing">Body/Housing</label>
+					<input type="checkbox" name="housing" id="housing" />
+					<br />
+					<label for="speaker">Speaker</label>
+					<input type="checkbox" name="speaker" id="speaker" />
+					<br />
+					<label for="button">Button(s)</label>
+					<input type="checkbox" name="button" id="button" />
+					<br />
+					<label for="pin">PIN Locked</label>
+					<input type="checkbox" name="pin" id="pin" />
+					<br />
+					<label for="gmail">Gmail Locked</label>
+					<input type="checkbox" name="gmail" id="gmail" />
+					<br />
+					<label for="icloud">iCLoud Locked</label>
+					<input type="checkbox" name="icloud" id="icloud" />
+					<br />
+					<label for="blacklisted">Carrier Blacklisted</label>
+					<input type="checkbox" name="blacklisted" id="blacklisted" />
+				</fieldset>
+				<br />
+				<fieldset id="fs5">
+					<legend>Details</legend>
+					<label>Please tell us more about the problem</label>
+					<br />
+					<textarea id="textArea" rows="5" cols="50"></textarea>
+				</fieldset>
+				<br />
+				<fieldset id="fs6">
+					<label>Check if you would like to receive emails from us.</label>
+					<br />
+					<input type="radio" name="yes" id="yes" value="yes" />
+				</fieldset>
+				<br />
+				<div id="fs7">
+					<input type="submit" name="submit" value="Submit" onclick="calculate();" />
+					<input type="reset" name="reset" value="Reset" onclick="Clear();" />
+				</div>
+			</form>
+		</div>
+	</div>
+	<footer>
+		iFixerROC Smartphone Repair Services
+		<br />
+		<br />
+		<script type="text/javascript">
+			document.write('This page was last modified: ' + document.lastModified)
+		</script>
+	</footer>
+</body>
+
+</html>

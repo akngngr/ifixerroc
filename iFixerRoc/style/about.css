@@ -1,0 +1,199 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+#pageWrap {
+  height: 1000px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+#container {
+  background-color: white;
+  height: auto;
+  width: 100%;
+  border-top: 20px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+header {
+  background-color: rgba(255, 182, 0, 0.8);
+  color: white;
+  font-size: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'rockwell';
+  padding: 25px;
+  text-shadow: 5px 5px 5px black;
+  height: 120px;
+  box-shadow: 0px 7px 10px black;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+header h1 {
+  display: flex;
+  font-size: 30px;
+  justify-content: flex-end;
+  text-align: left;
+}
+header img {
+  display: flex;
+  padding: 10px;
+}
+
+header img:hover {
+  width: 105px;
+  height: 105px;
+  transition: all 0.5s;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+nav ul {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 20px auto 0 auto;
+  width: 80%;
+  height: 50px;
+  text-align: center;
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Courier new';
+  min-width: 20%;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease-out 0.3s;
+  justify-content: space-around;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 182, 0, 1);
+  border-bottom: 5px double white;
+  border-top: 5px double white;
+  font-size: 25px;
+  box-shadow: -10px 0 20px -10px orange, 10px 0 20px -10px orange;
+  padding: 0 10px;
+  transition: all 0.5s;
+}
+#container h2 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 182, 0, 0.8);
+  padding: 15px;
+  box-shadow: 0px 7px 10px black;
+  width: 80%;
+  margin-top: 20px;
+  font-family: 'Courier new';
+}
+#about {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-family: 'Courier new';
+  font-weight: bold;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+#about p {
+  display: flex;
+  justify-content: ;
+}
+#meg {
+  display: flex;
+}
+#info {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Courier new';
+  width: 80%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+#inst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: orange;
+  font-weight: bold;
+}
+#info a:hover #insta,
+#info p:hover #insta {
+  width: 70px;
+  height: 70px;
+}
+#info a {
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+}
+#info a:hover {
+  color: rgba(255, 182, 0, 0.8);
+}
+#email:hover img,
+#call:hover img {
+  width: 80px;
+  height: 80px;
+}
+#email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: orange;
+  font-weight: bold;
+}
+#call {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: orange;
+  font-weight: bold;
+}
+footer {
+  margin: 10% auto 0 auto;
+  text-align: center;
+  font-size: 20px;
+  bottom: 0;
+  background-color: rgba(255, 182, 0, 0.8);
+  width: 100%;
+  box-shadow: 0px 7px 10px black;
+  position: absolute;
+}

@@ -1,0 +1,430 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#pageWrap {
+  height: auto;
+  background-color: white;
+  display: block;
+}
+
+#container {
+  background-color: white;
+  height: auto;
+  width: 100%;
+  border-top: 20px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+header {
+  background-color: rgba(255, 182, 0, 0.8);
+  color: white;
+  font-size: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'rockwell';
+  padding: 25px;
+  text-shadow: 5px 5px 5px black;
+  height: 120px;
+  box-shadow: 0px 7px 10px black;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+header h1 {
+  display: flex;
+  font-size: 30px;
+  justify-content: flex-end;
+  text-align: left;
+}
+
+header img {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header img:hover {
+  width: 105px;
+  height: 105px;
+  transition: all 0.5s;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+nav ul {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 20px auto 0 auto;
+  width: 80%;
+  height: 50px;
+  text-align: center;
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Courier new';
+  min-width: 20%;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease-out 0.3s;
+  justify-content: space-around;
+}
+nav ul li a:hover {
+  background-color: rgba(255, 182, 0, 1);
+  border-bottom: 5px double white;
+  border-top: 5px double white;
+  font-size: 25px;
+  box-shadow: -10px 0 20px -10px orange, 10px 0 20px -10px orange;
+  padding: 0 10px;
+  transition: all 0.5s;
+}
+#repairs {
+  height: auto;
+  width: 100%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  flex-wrap: wrap;
+}
+#repairs figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+#repairs input {
+  background-color: red;
+  color: white;
+  font-size: 24px;
+  font-family: 'Courier new';
+  width: 250px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#repairs a {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40%;
+}
+
+#repairs figure a:hover img {
+  box-shadow: -5px 0 20px 5px rgba(191, 191, 191, 0.8),
+    5px 0 20px 5px rgba(191, 191, 191, 0.8),
+    5px 0 20px -5px rgba(191, 191, 191, 0.8);
+  transition: box-shadow 0.8s ease-in-out;
+}
+
+#repair-title {
+  text-align: center;
+  margin: 20px auto;
+  background-color: rgba(255, 182, 0, 0.8);
+  padding: 15px;
+  box-shadow: 0px 7px 10px black;
+  width: 80%;
+  align-items: center;
+}
+footer {
+  margin: 10% auto 0 auto;
+  text-align: center;
+  font-size: 20px;
+  bottom: 0;
+  background-color: rgba(255, 182, 0, 0.8);
+  width: 100%;
+  box-shadow: 0px 7px 10px black;
+}
+#iphoneRepair,
+#samsungRepair,
+#lgRepair {
+  margin-right: auto;
+  width: 80%;
+  background-color: red;
+  position: relative;
+  margin-top: 30px;
+  height: auto;
+  text-align: center;
+}
+#repairType {
+  width: 100%;
+  background-color: white;
+  position: relative;
+  margin-top: 30px;
+  height: 750px;
+  text-align: center;
+  background-image: url('../media/i7bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#samsungRepair {
+  width: 100%;
+  background-color: white;
+  position: relative;
+  margin-top: 30px;
+  height: 750px;
+  text-align: center;
+  background-image: url('../media/s8bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 700px;
+}
+#lgRepair {
+  width: 100%;
+  background-color: white;
+  position: relative;
+  margin-top: 30px;
+  height: 750px;
+  text-align: center;
+  background-image: url('../media/lg6bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 700px;
+}
+
+#repairType input {
+  top: 270px;
+  margin-bottom: 25px;
+  width: 250px;
+  background-color: gray;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  height: 35px;
+  color: white;
+  font-family: 'Courier new';
+}
+
+#samsungRepair input {
+  top: 270px;
+  margin-bottom: 25px;
+  width: 250px;
+  background-color: gray;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  height: 35px;
+  color: white;
+  font-family: 'Courier new';
+  margin-left: 30px;
+}
+#lgRepair input {
+  top: 270px;
+  margin-bottom: 25px;
+  width: 250px;
+  background-color: gray;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  height: 35px;
+  color: white;
+  font-family: 'Courier new';
+}
+
+#repairType input:hover,
+#samsungRepair input:hover,
+#lgRepair input:hover {
+  background-color: rgba(119, 119, 119, 0.8);
+  box-shadow: -2px 0 10px 2px rgba(191, 191, 191, 0.8),
+    2px 0 10px 2px rgba(191, 191, 191, 0.8),
+    2px 0 10px -2px rgba(191, 191, 191, 0.8);
+  transition: box-shadow 0.5s;
+  font-weight: bold;
+}
+#iScreenRepair,
+#iPortRepair,
+#iBatteryRep,
+#sScreenRepair,
+#sPortRepair,
+#sBatteryRep,
+#lScreenRepair,
+#lPortRepair,
+#lBatteryRep {
+  margin-left: 128px;
+  margin-right: auto;
+  width: 80%;
+  background-color: white;
+  position: relative;
+  margin-top: 30px;
+  height: auto;
+  text-align: center;
+}
+#iScreenRepair {
+  background-image: url(../media/iphone3.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 800px;
+}
+#iPortRepair {
+  background-image: url(../media/charger.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 900px;
+}
+#iBatteryRep {
+  background-image: url(../media/i15.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 900px;
+}
+#sScreenRepair {
+  background-image: url(../media/samcracked.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1100px;
+}
+#sPortRepair {
+  background-image: url(../media/samcharger.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1100px;
+}
+#sBatteryRep {
+  background-image: url(../media/sambattery.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1100px;
+}
+#lScreenRepair {
+  background-image: url(../media/lgscreen.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1100px;
+}
+#lPortRepair {
+  background-image: url(../media/lgport.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1100px;
+}
+#lBatteryRep {
+  background-image: url(../media/lgbattery.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1100px;
+}
+#tblScreen,
+#tblPort,
+#tblBattery,
+#tblSamScreen,
+#tblSamPort,
+#tblSamBattery,
+#tblLGScreen,
+#tblLGPort,
+#tblLGBattery {
+  font-size: 24px;
+  padding: 20px;
+  color: black;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#tblScreen tr,
+#tblScreen td,
+#tblPort tr,
+#tblPort td,
+#tblBattery tr,
+#tblBattery td,
+#tblSamScreen tr,
+#tblSamScreen td,
+#tblSamPort tr,
+#tblSamPort td,
+#tblSamBattery tr,
+#tblSamBattery td,
+#tblLGScreen tr,
+#tblLGScreen td,
+#tblLGPort tr,
+#tblLGPort td,
+#tblLGBattery tr,
+#tblLGBattery td {
+  border-bottom: 2px solid gray;
+}
+
+#tblScreen th,
+#tblPort th,
+#tblBattery th,
+#tblSamScreen th,
+#tblSamPort th,
+#tblSamBattery th,
+#tblLGScreen th,
+#tblLGPort th,
+#tblLGBattery th {
+  font-size: 28px;
+  padding: 20px;
+  border-bottom: 5px double white;
+  font-family: 'Courier new';
+  background-color: rgba(255, 148, 0, 0.8);
+  height: 20px;
+}
+#iScreenRepair a,
+#iPortRepair a,
+#iBatteryRep a,
+#sScreenRepair a,
+#sPortRepair a,
+#sBatteryRep a,
+#lScreenRepair a,
+#lPortRepair a,
+#lBatteryRep a {
+  text-decoration: none;
+  color: orange;
+  font-style: 'Courier new';
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  padding: 8px;
+}
+#iScreenRepair a:hover,
+#iPortRepair a:hover,
+#iBatteryRep a:hover,
+#sScreenRepair a:hover,
+#sPortRepair a:hover,
+#sBatteryRep a:hover,
+#lScreenRepair a:hover,
+#lPortRepair a:hover,
+#lBatteryRep a:hover {
+  font-size: 24px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
